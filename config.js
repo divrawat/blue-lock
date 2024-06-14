@@ -1,17 +1,16 @@
 
-export const DOMAIN = 'http://localhost:3000';
-// export const DOMAIN = 'https://www.vinlandsagamanga.in.net';
+// export const DOMAIN = 'http://localhost:3000';
+export const DOMAIN = 'https://www.bluelockmanga.in.net';
 
-
-export const MANGA_DESCRIPTION = `Set in the Viking era, this manga follows Thorfinn's quest for revenge and his dream of finding the legendary land of Vinland. Filled with action and historical drama, <a href="${DOMAIN}"><u>Vinland Saga</u></a> is a thrilling story about battles, honor, and the search for peace. Perfect for fans of exciting, historical tales. Experience the gripping adventures of Thorfinn as he navigates through the tumultuous Viking world, facing formidable challenges and discovering his own path to redemption.`;
+export const MANGA_DESCRIPTION = `<a href="${DOMAIN}"><u>Blue Lock</u></a> is a Japanese manga series by Muneyuki Kaneshiro and Yusuke Nomura. It follows Yoichi Isagi, a high school soccer player, who joins "Blue Lock," an intense training program led by coach Jinpachi Ego. The program aims to create the world's best and most egoistic striker to lead Japan to World Cup victory. The story combines sports action with deep character drama, focusing on self-discovery, ambition, and the pursuit of excellence.`
 
 export const MANGA_NAME = 'Blue Lock';
-export const MANGA_AUTHOR = 'YUKIMURA Makoto';
+export const MANGA_AUTHOR = 'Muneyuki Kaneshiro';
 export const MANGA_RELEASE = '2015';
 export const MANGA_STATUS = 'Ongoing';
-export const MANGA_ARTIST = 'Makoto YUKIMURA ';
-export const MANGA_STUDIO = 'Wit, MAPPA';
-export const MANGA_GENRE = 'Action, Adventure, Drama, Historical, Seinen';
+export const MANGA_ARTIST = 'Yuusuke Nomura';
+export const MANGA_STUDIO = 'Eight Bit';
+export const MANGA_GENRE = 'Sports, Thriller, Drama, Psychological';
 
 export const CHAPTER_PREFIX = 'blue-lock-chapter';
 export const IMAGE_PREFIX = 'images/blue-lock';
@@ -21,11 +20,15 @@ export const URL_PREFIX = 'manga/blue-lock-chapter';
 export const AUTHOR_PAGE = `${DOMAIN}/blue-lock-team`;
 export const LOGO_URL = `${DOMAIN}/logo.webp`;
 export const COVER_IMG = `${DOMAIN}/cover.webp`;
-export const BEHIND_COVER_IMG = "";
+export const BEHIND_COVER_IMG = "https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/11/blue-lock.jpg";
 
 
+export const logo = <img src={`${LOGO_URL}`} alt="Logo" className="h-[65px] w-[210px] mr-5 md:ml-0 ml-4 md:pb-2 md:my-0 my-1" />
 
-export const APP_DESCRIPTION = `Read Vinland Saga manga online at "${DOMAIN}". Enjoy high-quality scans, latest chapters, and connect with fans in our vibrant community. Dive into the epic Viking adventure today!`;
+export const APP_NAME = 'Blue Lock';
+export const NavbarName = "Blue Lock";
+
+export const APP_DESCRIPTION = `Read ${MANGA_NAME} manga online at "${DOMAIN}". Enjoy high-quality scans, latest chapters, and connect with fans in our comment section.`;
 
 export const DISQUS_SHORTNAME = "my-cms-7";
 
@@ -33,36 +36,38 @@ export const DISQUS_SHORTNAME = "my-cms-7";
 export const MANGA_SUMMARY = [
     {
         id: 1,
-        content: "Vinland Saga is a gripping manga and anime series that plunges viewers into the tumultuous world of Vikings during the Viking Age. At its core is the compelling story of Thorfinn, a young boy whose life is shattered when his father, Thors, a renowned warrior, is killed. Driven by an unquenchable thirst for vengeance, Thorfinn embarks on a perilous journey to avenge his father's death."
+        content: "Blue Lock is a Japanese manga series written by Muneyuki Kaneshiro and illustrated by Yusuke Nomura. The story begins with Yoichi Isagi, a high school soccer player who dreams of becoming a professional striker but struggles with self-doubt and a lack of assertiveness on the field. His team's loss in a critical match due to his hesitation leaves him questioning his potential and the path he should take."
     },
     {
         id: 2,
-        content: "As the series unfolds, viewers are taken on a gripping adventure filled with intense battles, complex characters, and moral dilemmas. Thorfinn's quest for revenge leads him into the heart of the Viking world, where he encounters warlords, mercenaries, and fellow warriors, each with their own motivations and agendas."
+        content: "One day, Isagi receives an invitation to participate in a revolutionary training program called Blue Lock, created by the eccentric and ruthless coach Jinpachi Ego. Blue Lock's objective is to find and develop the best striker in Japan, one capable of leading the national team to World Cup victory. Unlike traditional training programs that emphasize teamwork, Blue Lock focuses on individual skill, ego, and the ability to outshine all others."
     },
     {
         id: 3,
-        content: "Yet, amidst the chaos of battle and the brutality of Viking society, Thorfinn's journey also becomes one of self-discovery and redemption. Along the way, he grapples with questions of honor, loyalty, and the true meaning of strength. As Thorfinn confronts the harsh realities of his world, he begins to question his desire for vengeance and yearns for a life of peace and purpose."
+        content: "Isagi decides to join Blue Lock, where he meets 299 other young and talented strikers from across the country, all vying for the same goal. The program is structured as a series of brutal competitions, where only the most egotistical and capable players can advance. Those who fail are permanently banned from representing Japan in soccer."
     },
     {
         id: 4,
-        content: "The concept of Vinland, a legendary land across the sea where conflict is replaced by harmony, serves as both a literal and metaphorical destination for Thorfinn. It represents his ultimate goal – a place where he can escape the cycle of violence and find a new beginning."
+        content: "As the story progresses, Isagi and his peers are subjected to rigorous physical and psychological challenges designed to push their limits and force them to confront their weaknesses. The players must form temporary teams to survive each round, but the nature of the competition fosters intense rivalries and conflicts. Isagi learns to harness his instincts, improve his skills, and embrace his inner drive to become the best."
     },
     {
         id: 5,
-        content: "Through stunning artwork, intricate storytelling, and rich historical detail, Vinland Saga captivates audiences with its exploration of themes such as justice, identity, and the human spirit. It challenges viewers to confront the complexities of morality and the consequences of one's actions, all within the vivid backdrop of Viking-era Scandinavia."
+        content: "Throughout the manga, readers are introduced to a diverse cast of characters, each with their unique strengths, backgrounds, and motivations. Key figures include Rin Itoshi, a prodigious talent with a cold demeanor; Meguru Bachira, a whimsical and unpredictable player with extraordinary dribbling skills; and Rensuke Kunigami, a disciplined and hard-working striker with a strong sense of justice."
     },
     {
         id: 6,
-        content: "In the end, Vinland Saga is not just a tale of revenge, but a profound saga of growth, redemption, and the enduring search for meaning in a world torn apart by conflict."
+        content: "Blue Lock explores themes of ambition, self-discovery, and the nature of talent. The series delves into the psychological aspects of competition, examining how pressure, rivalry, and the desire for greatness shape the players. It challenges the traditional notions of teamwork and highlights the importance of individual excellence in achieving success."
+    },
+    {
+        id: 7,
+        content: "As Isagi progresses through the stages of Blue Lock, he evolves from a hesitant and uncertain player into a confident and formidable striker. His journey is marked by intense matches, strategic battles, and personal growth. The manga captures the excitement and drama of soccer, with dynamic artwork and detailed action sequences that bring the sport to life."
+    },
+    {
+        id: 8,
+        content: "Ultimately, Blue Lock is a compelling sports manga that combines thrilling soccer action with deep character development and psychological intrigue. It appeals to fans of sports stories and those interested in exploring the complexities of ambition and the pursuit of greatness."
     }
 ];
 
-
-// Navbar
-export const logo = <img src={`${LOGO_URL}`} alt="Logo" className="h-[75px] w-[185px] mr-5 md:ml-0 ml-4 md:pb-2 md:my-0 my-1" />
-
-export const APP_NAME = 'Blue Lock';
-export const NavbarName = "Blue Lock";
 
 export const navLinks = [
     { text: 'Home', href: `${DOMAIN}` },

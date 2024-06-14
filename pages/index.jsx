@@ -90,10 +90,10 @@ export default function Home() {
       <article>
 
         <div className="md:flex md:mb-[60px] mb-5 pt-3 relative bg-[black]">
-          <div className="absolute inset-0 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${BEHIND_COVER_IMG})`, opacity: '0.25' }}></div>
+          <div className="absolute inset-0 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${BEHIND_COVER_IMG})`, opacity: '0.10' }}></div>
 
           <div className="pt-3 md:w-2/5">
-            <img className="mx-auto md:mx-0" width={450} height={450} src={`${COVER_IMG}`} alt="Manga Cover" />
+            <img className="mx-auto md:mx-0" width={430} height={430} src={`${COVER_IMG}`} alt="Manga Cover" />
           </div>
 
           <div className="md:w-3/5 md:mr-10  text-white p-5 relative z-10">
