@@ -6,10 +6,15 @@ Router.events.on('routeChangeStart', () => NProgress.start());
 Router.events.on('routeChangeComplete', () => NProgress.done());
 Router.events.on('routeChangeError', () => NProgress.done());
 NProgress.configure({ showSpinner: false })
+import { useEffect } from 'react';
 
 const shantellSans = Shantell_Sans({ subsets: ['latin'], preload: false });
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    const disableRightClick = (event) => { event.preventDefault(); };
+    document.addEventListener('contextmenu', disableRightClick);
+  }, []);
   return (
     <>
       <style jsx global>{`
