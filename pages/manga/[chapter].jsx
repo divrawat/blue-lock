@@ -3,8 +3,8 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Head from 'next/head';
 import { APP_NAME, DOMAIN, MANGA_NAME, NEXT_PREVIOUS_PREFIX, IMAGE_PREFIX, CHAPTER_PREFIX, AUTHOR_PAGE, LOGO_URL, chaptersData, IMAGES_SUBDOMAIN, DOMAIN_NAME, MANGA_GENRE, MANGA_TYPE, last5chapters, URL_PREFIX, HEADER_MANGA_DESC } from '@/config';
-// import DisqusComments from '@/components/DisQus';
-// import { AiFillChrome } from "react-icons/ai";
+import DisqusComments from '@/components/DisQus';
+import { AiFillChrome } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -204,12 +204,15 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
                     ))}
                 </section>
 
-                {/* <div className='py-10 bg-[#0f0511]'>
+                <div className='py-10 bg-[#0f0511]'>
                     <h2 className='text-4xl text-center text-[white] font-blod px-4 mb-10'>Comment Section</h2>
                     <section className='max-w-[1000px] mx-auto px-5'>
                         <DisqusComments url={`/manga/${URL}`} identifier={chapterNumber} title={`${MANGA_NAME} Chapter ${chapterNumber}`} />
                     </section>
-                </div> */}
+                </div>
+
+
+
                 <section className="text-white my-5">
                     <h2 className="text-3xl text-center my-5">{`${MANGA_NAME} Latest Chapters`}</h2>
                     {last5chapters?.map((chapter, index) => (

@@ -46,7 +46,7 @@ export const DESC = "It tells the story of Yoichi Isagi, a gifted high school so
 
 export const APP_DESCRIPTION = `Read ${MANGA_NAME} manga online at ${DOMAIN_NAME}. ${DESC}`;
 
-export const DISQUS_SHORTNAME = "my-cms-7";
+export const DISQUS_SHORTNAME = "blue-lock";
 
 
 export const MANGA_SUMMARY = [
