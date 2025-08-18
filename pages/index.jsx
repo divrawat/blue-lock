@@ -109,7 +109,7 @@ export default function Home() {
       <Navbar />
       <article>
 
-        <section className='max-w-[1200px] mx-auto md:flex rounded-md md:gap-[80px] bg-[black] mt-8 border border-[#373737] text-[white]'>
+        {/* <section className='max-w-[1200px] mx-auto md:flex rounded-md md:gap-[80px] bg-[black] mt-8 border border-[#373737] text-[white]'>
 
           <div className='md:w-[400px] md:pt-0 pt-6'>
             <img className='   md:mx-0 mx-auto' src={`${DOMAIN}/cover.webp`} alt="jujutsu kaisen Cover" />
@@ -140,12 +140,83 @@ export default function Home() {
 
           </div>
 
+        </section> */}
+
+
+        <section className='max-w-6xl mx-auto md:flex rounded-xl overflow-hidden bg-gradient-to-br from-[#05060f] to-black mt-12 border border-gray-800 text-white shadow-lg'>
+
+          <div className='md:w-[300px] flex-shrink-0 relative'>
+            <img
+              className='w-full h-auto object-cover object-center md:rounded-l-xl p-4'
+              src={`${DOMAIN}/cover.webp`}
+              alt={`${MANGA_NAME} Cover`}
+            />
+          </div>
+
+          <div className='md:flex-1 p-6 md:py-8'>
+            <div className='flex flex-col h-full'>
+              <div className='mb-6'>
+                <h1 className="text-3xl font-bold text-white text-center md:text-left mb-3">
+                  {`${MANGA_NAME}`}
+                </h1>
+                <div className='flex justify-center md:justify-start gap-2 mb-6'>
+                  <span className='px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-medium'>
+                    {MANGA_TYPE}
+                  </span>
+                  <span className='px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-medium'>
+                    {MANGA_RELEASE}
+                  </span>
+                </div>
+              </div>
+
+              <p className="text-gray-300 leading-relaxed mb-8 text-base">
+                {MANGA_DESCRIPTION}
+              </p>
+
+              <div className="pb-4">
+                <a href="https://www.amazon.com/blue-lock-manga/s?k=blue+lock+manga" target="_blank" rel="noopener noreferrer"
+                  className="text-[14px]  inline-flex items-center justify-center px-4 py-3 sm:px-5 sm:py-4 bg-blue-600 hover:bg-blue-700  text-white font-bold rounded-lg shadow-md transition-all duration-300 transform hover:scale-105  border-2 border-blue-500  hover:shadow-blue-500/50 " >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                  </svg>
+                  Buy Blue Lock Manga Online
+                </a>
+              </div>
+
+              <div className="mt-auto grid grid-cols-2 md:grid-cols-3 gap-6 pt-6 border-t border-gray-800">
+                <div className="text-center md:text-left">
+                  <p className="text-sm font-semibold text-gray-400 mb-1">Author</p>
+                  <p className="text-base font-medium text-white">{MANGA_AUTHOR}</p>
+                </div>
+
+                <div className="text-center md:text-left">
+                  <p className="text-sm font-semibold text-gray-400 mb-1">Status</p>
+                  <p className="text-base font-medium text-white">Ongoing</p>
+                </div>
+
+                <div className="text-center md:text-left col-span-2 md:col-span-1">
+                  <p className="text-sm font-semibold text-gray-400 mb-1">Chapters</p>
+                  <p className="text-base font-medium text-white">314 +</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </section>
 
 
 
+
+
+
+
+
+
+
+
         <h2 id="readmanga" className="font-extrabold text-3xl my-10 px-4 text-center">
-          <Link href={DOMAIN} className="hover:underline text-[white]">{`${MANGA_NAME} Chapters`}</Link>
+          <Link href={DOMAIN} className="hover:underline text-[white]">{`${MANGA_NAME} Manga Chapters`}</Link>
         </h2>
 
 
