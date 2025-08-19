@@ -13,6 +13,7 @@ import { FaRedditAlien } from "react-icons/fa";
 import { CiCalendarDate } from "react-icons/ci";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
+import { DiscussionEmbed } from 'disqus-react';
 export const runtime = 'experimental-edge';
 
 export default function Chapter({ chapterNumber, imageUrls, totalChapters, params, errorcode, readableDate, views, uploadDateTime, modifiedate }) {
@@ -207,7 +208,16 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
                 <div className='py-10 bg-[#0f0511]'>
                     <h2 className='text-4xl text-center text-[white] font-blod px-4 mb-10'>Comment Section</h2>
                     <section className='max-w-[1000px] mx-auto px-5'>
-                        <DisqusComments url={`/manga/${URL}`} identifier={chapterNumber} title={`${MANGA_NAME} Chapter ${chapterNumber}`} />
+                        {/* <DisqusComments url={`/manga/${URL}`} identifier={chapterNumber} title={`${MANGA_NAME} Chapter ${chapterNumber}`} /> */}
+
+                        <DiscussionEmbed shortname='blue-lock'
+                            config={{
+                                url: `${DOMAIN}/manga/${URL}`,
+                                identifier: `${DOMAIN}/manga/${URL}`,
+                                title: `${MANGA_NAME} Chapter ${chapterNumber}`,
+                                language: 'EN'
+                            }}
+                        />
                     </section>
                 </div>
 

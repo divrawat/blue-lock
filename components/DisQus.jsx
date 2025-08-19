@@ -1,6 +1,7 @@
 import { DiscussionEmbed } from "disqus-react";
 import { DOMAIN, DISQUS_SHORTNAME } from "@/config";
 
+
 const DisqusComments = ({ url, identifier, title }) => {
 
     const disqusConfig = {
@@ -18,5 +19,12 @@ const DisqusComments = ({ url, identifier, title }) => {
         </div>
     );
 };
+
+
+
+
+
+
+
 
 export default DisqusComments;
